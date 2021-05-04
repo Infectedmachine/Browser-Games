@@ -1,1 +1,1 @@
-# tictactoe
+# Simple Browser Games and utility
