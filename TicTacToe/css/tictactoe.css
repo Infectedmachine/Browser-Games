@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tictactoe {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+}
+
+
+.gameboard {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+  }
+
+.block {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: bold;
+    border: 3px solid black;
+    transition: background 0.3s ease-in-out;
+}
+  
+.block:hover {
+    cursor: pointer;
+    background: #38ac64;
+}
+
+.occupied:hover {
+    background: #ff3a3a;
+}
+
+#block1,
+#block2,
+#block3 {
+  border-top: none;
+}
+
+#block1,
+#block4,
+#block7 {
+  border-left: none;
+}
+
+#block7,
+#block8,
+#block9 {
+  border-bottom: none;
+}
+
+#block3,
+#block6,
+#block9 {
+  border-right: none;
+}
+
+.title {
+    padding: 1px;
+    height: 100px;
+    align-items: top;
+}
+
+.reset {
+    padding: 50px;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    color: #df0000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.chucknorris {
+  color: #ffffff;
+  height: 50px;
+  width: 490px;
+  border-radius: 100px;
+  background-color: #575757;
+}
+
+.chucknorris:hover {
+  background-color: #df0000;
+}
+
+.active{
+  background-color:#df0000;
+}
+
+.game-difficulty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-game:hover {
+    transform: scale(1.2) perspective(1px);
+}
